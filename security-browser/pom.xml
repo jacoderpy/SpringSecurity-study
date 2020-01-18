@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>security</artifactId>
+        <groupId>club.codermax</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <!--处理浏览器安全-->
+    <artifactId>security-browser</artifactId>
+
+
+    <dependencies>
+        <!--引入core中的依赖-->
+        <dependency>
+            <groupId>club.codermax</groupId>
+            <artifactId>security-core</artifactId>
+            <version>${codermax.security.version}</version>
+        </dependency>
+        <!--集群下的session管理-->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
